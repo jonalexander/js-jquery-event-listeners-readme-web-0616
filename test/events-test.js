@@ -16,7 +16,7 @@ describe('Selectors', () => {
     console.log("console.log called ->", message);
   })
 
-  let $, window
+  var $, window
 
   before(done => {
     window = jsdom.jsdom(html, { scripts, virtualConsole }).defaultView
